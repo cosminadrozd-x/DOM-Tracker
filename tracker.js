@@ -1,9 +1,18 @@
-let btn = document.getElementById('btn_count');
-let cnt = document.getElementById('val_count');
+let total = document.getElementById('val_total');
+
+let btn1 = document.getElementById('btn_add1');
+let btn5 = document.getElementById('btn_add5');
 
 
-btn.addEventListener('click', () => {
-    cnt.innerText = parseInt(cnt.innerText) + 1;
+btn1.addEventListener('click', () => {
+
+    total.innerText = parseInt(total.innerText) + 1;
+
 });
 
-console.log(btn);
+
+btn5.addEventListener('click', () => {
+
+    total.innerText = parseInt(total.innerText) + 5;
+
+});
