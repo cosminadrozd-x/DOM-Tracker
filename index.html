@@ -1,21 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Micro Tracker</title>
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-   <article>
-    <h3>Total</h3>
+<section aria-labelledby="tracker-title">
+  <h1 id="tracker-title">Micro-Tracker</h1>
 
-    <div id="val_total">0</div>
+  <article>
+    <h2>Soleil</h2>
+    <p>Minutes : <strong id="sun-value">0</strong></p>
+    <button id="btn-sun">+1</button>
+  </article>
 
-    <button id="btn_add1">Ajouter 1</button>
-    <button id="btn_add5">Ajouter 5</button>
+  <article>
+    <h2>Eau</h2>
+    <p>Verres : <strong id="water-value">0</strong></p>
+    <button id="btn-water">+1</button>
+  </article>
 
-</article>
-    <script src="tracker.js"></script>
+  <article>
+    <h2>Pause</h2>
+    <p>Moments : <strong id="break-value">0</strong></p>
+    <button id="btn-break">+1</button>
+  </article>
+
+  <p>Total : <strong id="total-value">0</strong></p>
+  <button id="btn-reset">Réinitialiser</button>
+</section>
+
+<script src="tracker.js"></script>
+
 </body>
 </html>
